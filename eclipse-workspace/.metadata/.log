@@ -780,3 +780,470 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui 2 2 2019-10-09 19:27:11.230
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2019-10-10 09:04:15.865 -----------------------------------------------
+eclipse.buildId=4.4.0.201909171436-RELEASE
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2019-10-10 09:04:26.408
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-10 09:04:26.408
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10f60e36,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8ad182c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:33.095
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:33.095
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2bde7328[org.springframework.tooling.boot.ls:1.11.0.201909171347(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:33.127
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-10 09:04:33.174
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MAX-Student'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:33.267
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.538
+!MESSAGE Boot LS startup time from start to initialized: 6364ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.601
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jscjGesuisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.601
+!MESSAGE subscribing to classpath changes: sts4.classpath.jscjGesu isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.601
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.601
+!MESSAGE subsribers = {sts4.classpath.jscjGesu=Send Classpath Notifications(85)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.601
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.601
+!MESSAGE project InterestCalculator_3_3 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE project GradeConverter_2_2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE Preparing classpath changed notification InterestCalculator_3_3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE project GradeConverter_2_2 SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE project StudentRegistration_2_1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE project StudentRegistration_2_1 SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE buffering callback sts4.classpath.jscjGesu InterestCalculator_3_3 false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.616
+!MESSAGE project TemperatureConverter_3_1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.632
+!MESSAGE executing callback sts4.classpath.jscjGesu 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.632
+!MESSAGE project TemperatureConverter_3_1 SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.632
+!MESSAGE project TravelTimeCalculator_3_2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.632
+!MESSAGE project ch02_ex1_Invoice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.632
+!MESSAGE project ch02_ex1_Invoice SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.632
+!MESSAGE project ch02_ex2_TestScore ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.647
+!MESSAGE project ch02_ex2_TestScore SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.647
+!MESSAGE project ch02_ex3_Invoice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.647
+!MESSAGE project ch02_ex3_Invoice SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.647
+!MESSAGE project ch02_ex3_Invoice_sol ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.647
+!MESSAGE project ch02_ex3_Invoice_sol SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.647
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.647
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jscjGesu => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.663
+!MESSAGE executing callback sts4.classpath.jscjGesu SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.663
+!MESSAGE Preparing classpath changed notification TravelTimeCalculator_3_2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.663
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.663
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.679
+!MESSAGE buffering callback sts4.classpath.jscjGesu TravelTimeCalculator_3_2 false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.679
+!MESSAGE executing callback sts4.classpath.jscjGesu 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:04:39.679
+!MESSAGE executing callback sts4.classpath.jscjGesu SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:22:47.049
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.jscjGesu
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:22:47.080
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.jscjGesu
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:22:47.080
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:22:47.080
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.jscjGesu => OK
+
+!ENTRY org.eclipse.ui 2 2 2019-10-10 09:22:48.815
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:26:57.658
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:26:57.658
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2bde7328[org.springframework.tooling.boot.ls:1.11.0.201909171347(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:26:57.658
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:26:58.231
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:26:58.247
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2bde7328[org.springframework.tooling.boot.ls:1.11.0.201909171347(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:26:58.247
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.315
+!MESSAGE Boot LS startup time from start to initialized: 3053ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.362
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LfmMpsMuisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.440
+!MESSAGE subscribing to classpath changes: sts4.classpath.LfmMpsMu isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.440
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.440
+!MESSAGE subsribers = {sts4.classpath.LfmMpsMu=Send Classpath Notifications(179)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE project 4_4_CommonDivisorCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE project 2_1_StudentRegistration_ ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE Preparing classpath changed notification 4_4_CommonDivisorCalculator
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE project 2_2_GradeConverter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE project 3_1_TemperatureConverter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE project 3_2_TravelTimeCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 4_4_CommonDivisorCalculator false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE project 3_3_InterestCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE Preparing classpath changed notification 2_1_StudentRegistration_
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.456
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE project ch02_ex1_Invoice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 2_1_StudentRegistration_ false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE project ch02_ex2_TestScore ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE Preparing classpath changed notification 2_2_GradeConverter
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE project ch02_ex3_Invoice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE project ch02_ex3_Invoice_sol ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 2_2_GradeConverter false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.471
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LfmMpsMu => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.487
+!MESSAGE Preparing classpath changed notification 3_1_TemperatureConverter
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.487
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.487
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.487
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 3_1_TemperatureConverter false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.487
+!MESSAGE Preparing classpath changed notification 3_2_TravelTimeCalculator
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.487
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.487
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.503
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 3_2_TravelTimeCalculator false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.503
+!MESSAGE Preparing classpath changed notification 3_3_InterestCalculator
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.503
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.503
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.503
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 3_3_InterestCalculator false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.503
+!MESSAGE Preparing classpath changed notification ch02_ex1_Invoice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.503
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.503
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.503
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu ch02_ex1_Invoice false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.518
+!MESSAGE Preparing classpath changed notification ch02_ex2_TestScore
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.518
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.518
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.518
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu ch02_ex2_TestScore false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.518
+!MESSAGE Preparing classpath changed notification ch02_ex3_Invoice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.518
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.518
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.518
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu ch02_ex3_Invoice false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.518
+!MESSAGE Preparing classpath changed notification ch02_ex3_Invoice_sol
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.534
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.534
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.534
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu ch02_ex3_Invoice_sol false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.534
+!MESSAGE executing callback sts4.classpath.LfmMpsMu 10 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:01.612
+!MESSAGE executing callback sts4.classpath.LfmMpsMu SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.735
+!MESSAGE Preparing classpath changed notification 2_1_StudentRegistration_
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.750
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.766
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 2_1_StudentRegistration_ true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.766
+!MESSAGE Preparing classpath changed notification 2_2_GradeConverter
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.766
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.766
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 2_2_GradeConverter true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.766
+!MESSAGE Preparing classpath changed notification 3_1_TemperatureConverter
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.766
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 3_1_TemperatureConverter true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE Preparing classpath changed notification 3_2_TravelTimeCalculator
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 3_2_TravelTimeCalculator true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE Preparing classpath changed notification 3_3_InterestCalculator
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu 3_3_InterestCalculator true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE Preparing classpath changed notification ch02_ex1_Invoice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu ch02_ex1_Invoice true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE Preparing classpath changed notification ch02_ex2_TestScore
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.781
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.797
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu ch02_ex2_TestScore true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.797
+!MESSAGE Preparing classpath changed notification ch02_ex3_Invoice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.797
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.797
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu ch02_ex3_Invoice true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.797
+!MESSAGE Preparing classpath changed notification ch02_ex3_Invoice_sol
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.797
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.797
+!MESSAGE buffering callback sts4.classpath.LfmMpsMu ch02_ex3_Invoice_sol true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.797
+!MESSAGE executing callback sts4.classpath.LfmMpsMu 9 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 09:27:16.813
+!MESSAGE executing callback sts4.classpath.LfmMpsMu SUCCESS [done]
