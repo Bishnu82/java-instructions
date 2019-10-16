@@ -67,13 +67,38 @@ public class ArraysDemoApp {
 		for (String s: names) {
 			System.out.println(s);
 		}
+		//sort products
+		for (int i=0; i<pdts.length; i++) {
+			System.out.println(pdts[i]);
+		}
+		Arrays.sort(pdts);
+		for (Product p: pdts) {
+			System.out.println(p);
+		}
+		
+		// Create a 3 x 3 array
+		String[][] ticTacToeGrid = new String[3][3];
+		for (int r = 0; r < ticTacToeGrid.length; r++) {
+			//process row
+			for(int c=0; c<ticTacToeGrid[r].length; c++) {
+			//process column 
+				ticTacToeGrid[r][c] = r+"-"+c;
+			}
+		}
 		
 		
-		
-		
-		
-		
-		
-		
+		String table = "";
+		//display 3 x 3 array
+		for (int r = 0; r < ticTacToeGrid.length; r++) {
+			//process row
+			String row = "";
+			for(int c=0; c<ticTacToeGrid[r].length; c++) {
+			//process column 
+				row+=ticTacToeGrid[r][c]+" ";
+		}
+			row += "\n";
+			table += row;
 	}
+		System.out.println(table);
+}
 }

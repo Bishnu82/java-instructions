@@ -12822,3 +12822,40 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-10-16 14:45:31.617
+!MESSAGE No repository found at http://download.eclipse.org/tm/updates/3.7.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-10-16 14:45:32.789
+!MESSAGE No repository found at http://glimpse.metsci.com.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-10-16 14:45:43.921
+!MESSAGE No repository found at https://twitter.com/telosys.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-10-16 14:46:00.039
+!MESSAGE No repository found at http://www.telosys.org.
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-16 15:40:40.664
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-16 15:54:35.775
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xmoOfAQk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-16 15:54:35.775
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.xmoOfAQk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-16 15:54:35.775
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-16 15:54:35.791
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xmoOfAQk => OK

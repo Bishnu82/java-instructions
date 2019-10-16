@@ -1,6 +1,6 @@
 package Business;
 
-public class Product {
+public class Product implements Comparable {
 	private String code;
 	private String description;
 	private double price;
@@ -62,6 +62,13 @@ public class Product {
 		}
 		return false;
 	}
-	
+	@Override
+	public int compareTo(Object arg0) {
+		//compare product code
+		int c = 0;
+		Product p = (Product)arg0;
+		c = this.code.compareTo(p.getCode());
+		return c;
+	}
 
 }

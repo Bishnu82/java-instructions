@@ -1,7 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-<typeInfo handle="=9_2_AccountBalanceCalculator/src&lt;business{Depositable.java[Depositable" modifiers="513" timestamp="1571234995492"/>
-<typeInfo handle="=9_2_AccountBalanceCalculator/src&lt;business{Withdrawable.java[Withdrawable" modifiers="513" timestamp="1571235633875"/>
-<typeInfo handle="=9_2_AccountBalanceCalculator/src&lt;business{Balanceable.java[Balanceable" modifiers="513" timestamp="1571235633875"/>
-<typeInfo handle="=9_2_AccountBalanceCalculator/src&lt;business{Account.java[Account" modifiers="1" timestamp="1571238673136"/>
-</typeInfoHistroy>
+<typeInfoHistroy/>
