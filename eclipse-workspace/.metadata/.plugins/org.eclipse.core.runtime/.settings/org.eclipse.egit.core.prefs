@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=C\:\\repos\\java-instruction\\.git;C\:\\Users\\MAX-Student\\git\\java-instructions\\.git;C\:\\Users\\MAX-Student\\git\\BootcampConsole\\.git;
 GitRepositoriesView.GitDirectories.relative=C\:\\repos\\java-instruction\\.git;C\:\\Users\\MAX-Student\\git\\java-instructions\\.git;C\:\\Users\\MAX-Student\\git\\BootcampConsole\\.git;
+=======
+GitRepositoriesView.GitDirectories=C\:\\Users\\SIZZLE\\git\\java-instructions\\.git;D\:\\Repos\\java-instruction\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Users\\SIZZLE\\git\\java-instructions\\.git;D\:\\Repos\\java-instruction\\.git;
+>>>>>>> ede90bcc794b510c97b1be40d5fa6e39b4eb6945
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
