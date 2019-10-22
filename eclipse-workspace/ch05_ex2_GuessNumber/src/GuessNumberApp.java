@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import java.util.InputMismatchException;
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
 import java.util.Scanner;
 
 public class GuessNumberApp {
@@ -25,9 +29,26 @@ public class GuessNumberApp {
         Scanner sc = new Scanner(System.in);            
         int count = 1;
         while (true) {
+<<<<<<< HEAD
             System.out.print("Your guess: ");
             int guess = sc.nextInt();
             
+=======
+        	System.out.print("Your guess: ");
+        	int guess = 0;
+        	//try {
+        	//	guess = sc.nextInt();
+        	//} catch(InputMismatchException e) {
+            //	System.out.println("Error! Invalid number. Try again.");
+            //	sc.nextLine();
+            //	continue;
+            //}
+        	if (sc.hasNextInt()) {
+                guess = sc.nextInt();
+                sc.nextLine();
+            } 
+        	
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
             if (guess < 1 || guess > LIMIT) {
                 System.out.println("Invalid guess. Try again.");
                 continue;
@@ -43,7 +64,15 @@ public class GuessNumberApp {
                 break;
             }            
             count++;
+<<<<<<< HEAD
         }
         System.out.println("Bye!");
     }   
 }
+=======
+        
+        }
+        System.out.println("Bye!");
+    }   
+}
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34

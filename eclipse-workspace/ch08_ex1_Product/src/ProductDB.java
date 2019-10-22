@@ -36,7 +36,20 @@ public class ProductDB {
             s.setPrice(0.00);
             s.setVersion("8.2");
             p = s; // set Product object equal to the Software object
+<<<<<<< HEAD
         }
+=======
+        } else if (productCode.equalsIgnoreCase("child")) {
+            Album a = new Album();
+            a.setCode("child");
+            a.setDescription("Childish Gambino");
+            a.setPrice(10.00);
+            a.setArtist("Childish Gambino");
+            a.setAlbum("Campfire");
+            p = a; // set Product object equal to the Software object
+        }
+        
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
         return p;
     }
 }

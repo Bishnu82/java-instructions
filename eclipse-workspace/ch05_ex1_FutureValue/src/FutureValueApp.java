@@ -25,6 +25,7 @@ public class FutureValueApp {
             double futureValue = calculateFutureValue(
                     monthlyInvestment, monthlyInterestRate, months);
 
+<<<<<<< HEAD
             // get the currency and percent formatters
             NumberFormat c = NumberFormat.getCurrencyInstance();
             NumberFormat p = NumberFormat.getPercentInstance();
@@ -47,6 +48,16 @@ public class FutureValueApp {
             sc.nextLine();  // discard any other data entered on the line
             System.out.println();
         }
+=======
+            // print the results
+            System.out.println("FORMATTED RESULTS");
+            printFormattedResults(monthlyInvestment, interestRate,
+            		years, futureValue);
+           
+            // see if the user wants to continue
+            choice = askToContinue(sc);
+       }
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
     }
 
     public static double getDoubleWithinRange(Scanner sc, String prompt,
@@ -128,4 +139,33 @@ public class FutureValueApp {
         }
         return futureValue;
     }
+<<<<<<< HEAD
+=======
+    
+    public static String askToContinue(Scanner sc) {
+        System.out.print("Continue? (y/n): ");
+        String choice = sc.next();
+        sc.nextLine();  // discard any other data entered on the line
+        System.out.println();
+        return choice;
+    }
+    
+    private static void printFormattedResults(double monthlyInvestment,
+    		double interestRate, int years, double futureValue) {
+       	// get the currency and percent formatters
+        NumberFormat c = NumberFormat.getCurrencyInstance();
+        NumberFormat p = NumberFormat.getPercentInstance();
+        p.setMinimumFractionDigits(1);
+        
+        
+        String results
+        = "Monthly investment:   " + c.format(monthlyInvestment) + "\n"
+        + "Yearly interest rate: " + p.format(interestRate / 100) + "\n"
+        + "Number of years:      " + years + "\n"
+        + "Future value:         " + c.format(futureValue) + "\n";
+    	
+
+        System.out.print(results);
+    }
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
 }

@@ -21,7 +21,11 @@ public class ProductApp {
             // display the output
             System.out.println();
             if (p != null) {
+<<<<<<< HEAD
                 System.out.println("Description: " + p.toString());
+=======
+                System.out.println("Description: " + p.getDisplayText());
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
                 System.out.println("Price:       " + p.getPriceFormatted());
             } else {
                 System.out.println("No product matches this product code.");

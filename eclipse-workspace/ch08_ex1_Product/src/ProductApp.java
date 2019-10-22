@@ -28,7 +28,11 @@ public class ProductApp {
             }
 
             System.out.println();
+<<<<<<< HEAD
             System.out.println("Product count: " + Product.getCount() + "\n");
+=======
+            System.out.println("Product count: " + Product.getCount() +"\n");
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
 
             // see if the user wants to continue
             System.out.print("Continue? (y/n): ");

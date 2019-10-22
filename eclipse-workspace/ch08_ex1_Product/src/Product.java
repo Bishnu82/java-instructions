@@ -5,7 +5,11 @@ public class Product {
     private String code;
     private String description;
     private double price;
+<<<<<<< HEAD
     protected static int count = 0;
+=======
+    static int count = 0;
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
 
     public Product() {
     }

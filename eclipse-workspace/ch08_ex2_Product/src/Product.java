@@ -1,6 +1,10 @@
 import java.text.NumberFormat;
 
+<<<<<<< HEAD
 public class Product {
+=======
+public abstract class Product {
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
 
     private String code;
     private String description;
@@ -38,6 +42,11 @@ public class Product {
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         return currency.format(price);
     }
+<<<<<<< HEAD
+=======
+    
+    abstract String getDisplayText();
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
 
     @Override
     public String toString() {
