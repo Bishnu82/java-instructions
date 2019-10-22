@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 INDEX VERSION 1.131+D:\Repos\java-instruction\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
-4212441149.index
-=======
-INDEX VERSION 1.131+C:\repos\java-instruction\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
-3805130510.index
->>>>>>> c333bb1ec87b9a45946999edfed981a07a209f03
+495518317.index
+4238560637.index
+1550412570.index
+3231345679.index
+3875857704.index
+3772452883.index

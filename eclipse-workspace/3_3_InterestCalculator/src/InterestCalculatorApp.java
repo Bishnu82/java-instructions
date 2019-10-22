@@ -20,19 +20,16 @@ public class InterestCalculatorApp {
 				.setScale(2, RoundingMode.HALF_UP);
 			System.out.println("Enter Interest Ammount:   ");
 			BigDecimal iAmmount = sc.nextBigDecimal();
-				
-			
-			BigDecimal iTotal = ammount.multiply(iAmmount);
+			BigDecimal iTotal = ammount.multiply(iAmmount)
+				.setScale(2, RoundingMode.HALF_UP);
 				
 			NumberFormat currency = NumberFormat.getCurrencyInstance();
 			NumberFormat percent = NumberFormat.getPercentInstance();
-			 percent.setMaximumFractionDigits(3);
-			NumberFormat icurrency = NumberFormat.getCurrencyInstance();
-			
-			
-			System.out.println("Loan Ammount:"+"$"+currency.format(ammount));
-			System.out.println("Interest Rate:"+percent.format(iAmmount));
-			System.out.println("Interest:"+"$"+icurrency.format(iTotal));
+			percent.setMaximumFractionDigits(3);
+            			
+			System.out.println("Loan Ammount:        "+currency.format(ammount));
+			System.out.println("Interest Rate:       "+percent.format(iAmmount));
+			System.out.println("Interest:            "+iTotal);
 		
 			
 			

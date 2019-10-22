@@ -4,13 +4,8 @@ codemix.dont.show.upsell.until=1572894114962
 configurationInstallLocation=/C\:/Eclipse/eclipse 4/spring-tool-suite-4-4.4.0.RELEASE-e4.13.0-win32.win32.x86_64/sts-4.4.0.RELEASE/
 eclipse.preferences.version=1
 iconcolormode=primary
-<<<<<<< HEAD
-last.download.attempt.time=1570667551635
-lastConfiguration=1571002216624
-=======
-last.download.attempt.time=1570663587937
-lastConfiguration=1570712660129
->>>>>>> c333bb1ec87b9a45946999edfed981a07a209f03
+last.download.attempt.time=1571694930988
+lastConfiguration=1571694923207
 newinstall=false
 showWelcomeDialog=false
 workbench.theme=Dark Gray

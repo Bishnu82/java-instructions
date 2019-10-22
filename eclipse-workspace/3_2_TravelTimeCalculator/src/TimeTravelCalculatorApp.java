@@ -22,11 +22,11 @@ public class TimeTravelCalculatorApp {
 			
 			System.out.println("Estimated Travel Time:");
 			System.out.println("======================");
-			System.out.println("Hours:       "+hoursInt);
-			System.out.println("Mins:             "+min);
+			System.out.println("Hours:  "+hoursInt);
+			System.out.println("Mins:   "+min);
 			
 			
-			System.out.println("Continue? ");
+			System.out.println("Continue? \n");
 			choice = sc.next();
 		}
 		
