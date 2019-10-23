@@ -2,9 +2,7 @@ import java.util.Scanner;
 
 public class InvoiceApp {
 
-    private static final String String = null;
-
-	public static void main(String[] args) {
+ 	public static void main(String[] args) {
         // welcome the user to the program
         System.out.println("Welcome to the Invoice Total Calculator");
         System.out.println();  // print a blank line
@@ -15,7 +13,12 @@ public class InvoiceApp {
 
         // perform invoice calculations until choice isn't equal to "y" or "Y"
         String choice = "y";
-        while (!choice.equalsIgnoreCase("n")) {
+     
+        int invoiceCount = 0;
+        double discountTotal = 0;
+        double invoiceTotal = 0;
+       
+        while (choice.equalsIgnoreCase("y")) {
             // get the invoice subtotal from the user
             System.out.print("Enter subtotal:   ");
             double subtotal = sc.nextDouble();
@@ -33,11 +36,17 @@ public class InvoiceApp {
             }
             double discountAmount = subtotal * discountPercent;
             double total = subtotal - discountAmount;
-
+                       	
+            	
+            invoiceCount = invoiceCount + 1;
+            invoiceTotal = invoiceTotal + total;
+            discountTotal = discountTotal + discountAmount;
+            	
             // display the discount amount and total
             String message = "Discount percent: " + discountPercent + "\n"
                            + "Discount amount:  " + discountAmount + "\n"
-                           + "Invoice total:    " + total + "\n";            
+                           + "Invoice total:    " + total + "\n"
+                           + invoiceTotal;            
             System.out.println(message);
 
             // see if the user wants to continue
@@ -45,11 +54,14 @@ public class InvoiceApp {
             choice = sc.next();
             System.out.println();
            
+        
+        if (choice.equalsIgnoreCase("n")) {
+        	System.out.println("Number of invoices:   "+invoiceCount);
+        	System.out.println("Average invoice:      "+invoiceTotal / invoiceCount);
+        	System.out.println("Average discount:     "+discountTotal / invoiceCount);
+        	
         }
     }
-
-	private static void equalsIgnoreCase() {
-		// TODO Auto-generated method stub
-		
 	}
+
 }

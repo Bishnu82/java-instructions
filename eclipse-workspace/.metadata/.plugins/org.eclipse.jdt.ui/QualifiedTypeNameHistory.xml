@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="Console"/>
+<fullyQualifiedTypeName name="java.math.RoundingMode"/>
+<fullyQualifiedTypeName name="java.math.BigDecimal"/>
+<fullyQualifiedTypeName name="java.text.NumberFormat"/>
+<fullyQualifiedTypeName name="ChangeCalculatorApp"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="business.Commands"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="util.Console"/>
+=======
 <fullyQualifiedTypeName name="java.math.BigDecimal"/>
 <fullyQualifiedTypeName name="java.math.RoundingMode"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -8,11 +21,9 @@
 <fullyQualifiedTypeName name="business.SavingsAccount"/>
 <fullyQualifiedTypeName name="java.text.NumberFormat"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="business.Account"/>
-<fullyQualifiedTypeName name="java.lang.Comparable"/>
-<fullyQualifiedTypeName name="Business.Student"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="util.Console"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="business.Account"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
 </qualifiedTypeNameHistroy>

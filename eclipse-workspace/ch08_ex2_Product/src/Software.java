@@ -17,7 +17,11 @@ public class Software extends Product {
     }
 
     @Override
+<<<<<<< HEAD
+    public String toString() {
+=======
     public String getDisplayText() {
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
         return super.toString() + " " + version;
     }
 }

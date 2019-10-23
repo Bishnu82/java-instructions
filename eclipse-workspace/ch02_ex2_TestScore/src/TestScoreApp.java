@@ -37,10 +37,15 @@ public class TestScoreApp {
         if (scoreCount > 0) {
             averageScore = (double) scoreTotal / scoreCount;
         }
+        else{
+        System.out.println("Not Greater than 0");
+        return;            
+        }
         String message = "\n"
             	+ "Score count:   " + scoreCount + "\n"
                 + "Score total:   " + scoreTotal + "\n"
                 + "Average score: " + averageScore + "\n";
         System.out.println(message);
+       
     }
 }

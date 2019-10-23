@@ -25,6 +25,30 @@ public class FutureValueApp {
             double futureValue = calculateFutureValue(
                     monthlyInvestment, monthlyInterestRate, months);
 
+<<<<<<< HEAD
+            // get the currency and percent formatters
+            NumberFormat c = NumberFormat.getCurrencyInstance();
+            NumberFormat p = NumberFormat.getPercentInstance();
+            p.setMinimumFractionDigits(1);
+
+            // format the result as a single string
+            String results
+              = "Monthly investment:   " + c.format(monthlyInvestment) + "\n"
+              + "Yearly interest rate: " + p.format(interestRate / 100) + "\n"
+              + "Number of years:      " + years + "\n"
+              + "Future value:         " + c.format(futureValue) + "\n";
+
+            // print the results
+            System.out.println("FORMATTED RESULTS");
+            System.out.println(results);
+
+            // see if the user wants to continue
+            System.out.print("Continue? (y/n): ");
+            choice = sc.next();
+            sc.nextLine();  // discard any other data entered on the line
+            System.out.println();
+        }
+=======
             // print the results
             System.out.println("FORMATTED RESULTS");
             printFormattedResults(monthlyInvestment, interestRate,
@@ -33,6 +57,7 @@ public class FutureValueApp {
             // see if the user wants to continue
             choice = askToContinue(sc);
        }
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
     }
 
     public static double getDoubleWithinRange(Scanner sc, String prompt,
@@ -114,6 +139,8 @@ public class FutureValueApp {
         }
         return futureValue;
     }
+<<<<<<< HEAD
+=======
     
     public static String askToContinue(Scanner sc) {
         System.out.print("Continue? (y/n): ");
@@ -140,4 +167,5 @@ public class FutureValueApp {
 
         System.out.print(results);
     }
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
 }

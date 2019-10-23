@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
+	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.WizardSettings">
+		<item key="DIALOG_X_ORIGIN" value="785"/>
+		<item key="DIALOG_Y_ORIGIN" value="252"/>
+		<item key="DIALOG_WIDTH" value="1007"/>
+		<item key="DIALOG_HEIGHT" value="715"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+=======
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.UpdateWizard.WizardSettings">
 		<item key="DIALOG_X_ORIGIN" value="319"/>
 		<item key="DIALOG_Y_ORIGIN" value="104"/>
@@ -52,5 +60,6 @@
 		<item key="IDColumnWidth" value="200"/>
 		<item key="ListSashWeight" value="800"/>
 		<item key="DetailsSashWeight" value="200"/>
+>>>>>>> a953b95255c11f4329a7651e4f3ab5096c3bdb34
 	</section>
 </section>

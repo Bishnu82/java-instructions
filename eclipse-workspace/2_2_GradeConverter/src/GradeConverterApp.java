@@ -6,8 +6,8 @@ public class GradeConverterApp {
 
 		System.out.println("Welcome to the letter grade converter");
 		Scanner sc = new Scanner(System.in);
-		String userEntry = "y";
-		while (userEntry.equalsIgnoreCase("Y")) {
+		String choice = "y";
+		while (choice.equalsIgnoreCase("Y")) {
 				System.out.println("Enter numerical grade: ");
 				Integer grade = sc.nextInt();
 				String gLetter = null;
@@ -21,14 +21,15 @@ public class GradeConverterApp {
 						gLetter = "D";
 					else
 						gLetter = "F";
+							
 					
-		System.out.println("Letter Grade :" + " " + gLetter);		
-		System.out.println("Continue? y/n");
-		System.out.println("Good Bye !!!");
-		
-		sc.close();
-		
+		System.out.println("Letter Grade :" + " " + gLetter+ "\n");		
+		System.out.println("Continue? y/n"+"\n");
+		choice = sc.next();
+		System.out.println();
 		}
+		System.out.println("Good Bye !!!");
+		sc.close();
 	}
 
 }
