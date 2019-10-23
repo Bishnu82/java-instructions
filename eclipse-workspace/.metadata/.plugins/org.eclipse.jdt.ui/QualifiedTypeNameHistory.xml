@@ -8,8 +8,11 @@
 <fullyQualifiedTypeName name="business.SavingsAccount"/>
 <fullyQualifiedTypeName name="java.text.NumberFormat"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="util.Console"/>
 <fullyQualifiedTypeName name="business.Account"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="Business.Student"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="util.Console"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
