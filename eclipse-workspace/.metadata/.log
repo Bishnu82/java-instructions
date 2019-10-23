@@ -15780,3 +15780,15 @@ org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 2; The content of el
 
 !ENTRY org.eclipse.ui 2 2 2019-10-23 09:40:11.179
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 11:40:26.970
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KtNDTgAJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 11:40:26.972
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.KtNDTgAJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 11:40:26.973
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 11:40:26.973
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KtNDTgAJ => OK
