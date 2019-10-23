@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<list key="installedFeatures">
 		<item value="com.genuitec.eclipse.code.angular.feature:3.5.0.201909301418"/>
 		<item value="com.genuitec.eclipse.code.angularide.feature:3.5.0.201909301418"/>
@@ -141,4 +142,27 @@
 		<item value="pack.react:3.5.0.201909301418"/>
 		<item value="pack.vue:3.5.0.201909301418"/>
 	</list>
+=======
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\repos\java-instruction\eclipse-workspace"/>
+			<item value="C:\repos\java-instruction\eclipse-workspace\ch07_ex1_Product_sol"/>
+			<item value="C:\repos\java-instruction\eclipse-workspace\PRS-Console"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+>>>>>>> 930f4576d01397924738ccaad7021a90efb1ef05
 </section>
