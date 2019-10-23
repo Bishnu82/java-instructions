@@ -14969,3 +14969,814 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 00:44:05.172
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.jrWqMjga
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 00:44:05.173
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.jrWqMjga
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 00:44:05.174
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 00:44:05.175
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.jrWqMjga => OK
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-10-23 00:44:06.909
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.jdt.internal.ui.JavaUIException: Problems reading information from XML 'QualifiedTypeNameHistory.xml'
+	at org.eclipse.jdt.internal.corext.util.History.createException(History.java:77)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:266)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:174)
+	at org.eclipse.jdt.internal.corext.util.QualifiedTypeNameHistory.<init>(QualifiedTypeNameHistory.java:36)
+	at org.eclipse.jdt.internal.corext.util.QualifiedTypeNameHistory.getDefault(QualifiedTypeNameHistory.java:29)
+	at org.eclipse.jdt.internal.ui.JavaPlugin.stop(JavaPlugin.java:548)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:899)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:891)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1029)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:658)
+	at org.eclipse.osgi.container.Module.stop(Module.java:520)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1885)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1760)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:658)
+	at org.eclipse.osgi.container.Module.stop(Module.java:520)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 2; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:264)
+	... 21 more
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2019-10-23 00:44:06.910
+!MESSAGE Problems reading information from XML 'QualifiedTypeNameHistory.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 2; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:264)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:174)
+	at org.eclipse.jdt.internal.corext.util.QualifiedTypeNameHistory.<init>(QualifiedTypeNameHistory.java:36)
+	at org.eclipse.jdt.internal.corext.util.QualifiedTypeNameHistory.getDefault(QualifiedTypeNameHistory.java:29)
+	at org.eclipse.jdt.internal.ui.JavaPlugin.stop(JavaPlugin.java:548)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:899)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:891)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1029)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:658)
+	at org.eclipse.osgi.container.Module.stop(Module.java:520)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1885)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1760)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:658)
+	at org.eclipse.osgi.container.Module.stop(Module.java:520)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2019-10-23 09:36:00.340 -----------------------------------------------
+eclipse.buildId=4.4.0.201909171436-RELEASE
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-10-23 09:39:09.173
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY org.eclipse.jface 2 0 2019-10-23 09:39:14.245
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-23 09:39:14.245
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24bc52ce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40949bb0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-10-23 09:39:18.356
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-10-23 09:39:18.356
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:27.504
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:27.505
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6035396c[org.springframework.tooling.boot.ls:1.11.0.201909171347(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:27.534
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:28.130
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-23 09:39:29.871
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SIZZLE'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.debug.ui 4 120 2019-10-23 09:39:34.826
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 2; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.restoreLaunchHistory(LaunchConfigurationManager.java:505)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.loadLaunchHistories(LaunchConfigurationManager.java:1068)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getLaunchHistory(LaunchConfigurationManager.java:1040)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.internalGetHistory(AbstractLaunchHistoryAction.java:547)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.getToolTip(AbstractLaunchHistoryAction.java:236)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.updateTooltip(AbstractLaunchHistoryAction.java:201)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.initialize(AbstractLaunchHistoryAction.java:171)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.selectionChanged(AbstractLaunchHistoryAction.java:513)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:194)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:122)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:157)
+	at org.eclipse.ui.plugin.AbstractUIPlugin.lambda$0(AbstractUIPlugin.java:540)
+	at org.eclipse.swt.widgets.RunnableLock._run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:50)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:394)
+	at org.eclipse.jface.dialogs.MessageDialog.openWarning(MessageDialog.java:515)
+	at org.springframework.tooling.boot.ls.MissingJdkWarning.show(MissingJdkWarning.java:50)
+	at org.springframework.tooling.boot.ls.MissingJdkWarning.lambda$0(MissingJdkWarning.java:30)
+	at org.eclipse.swt.widgets.RunnableLock._run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:50)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.164
+!MESSAGE Boot LS startup time from start to initialized: 16584ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.199
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KtNDTgAJisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.201
+!MESSAGE subscribing to classpath changes: sts4.classpath.KtNDTgAJ isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.202
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.213
+!MESSAGE subsribers = {sts4.classpath.KtNDTgAJ=Send Classpath Notifications(170)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.214
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.214
+!MESSAGE project PRS-Console ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.215
+!MESSAGE Preparing classpath changed notification PRS-Console
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.215
+!MESSAGE project 12_2_WizardInventoryGame ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.216
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.216
+!MESSAGE project 2_1_StudentRegistration_ ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.216
+!MESSAGE project 2_1_StudentRegistration_ SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.216
+!MESSAGE project 2_2_GradeConverter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.217
+!MESSAGE project 2_2_GradeConverter SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.217
+!MESSAGE project 2_3_RectangleCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.217
+!MESSAGE project 2_3_RectangleCalculator SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.218
+!MESSAGE project 3_1_TemperatureConverter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.218
+!MESSAGE project 3_1_TemperatureConverter SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.218
+!MESSAGE project 3_2_TravelTimeCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.219
+!MESSAGE project 3_2_TravelTimeCalculator SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.219
+!MESSAGE project 3_3_InterestCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.219
+!MESSAGE project 3_3_InterestCalculator SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.219
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.220
+!MESSAGE project 3_4_ChangeCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.220
+!MESSAGE project 3_4_ChangeCalculator SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.220
+!MESSAGE project 4_1_TableofPowers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.220
+!MESSAGE buffering callback sts4.classpath.KtNDTgAJ PRS-Console false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.221
+!MESSAGE project 4_1_TableofPowers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.221
+!MESSAGE Preparing classpath changed notification 12_2_WizardInventoryGame
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.221
+!MESSAGE project 4_4_CommonDivisorCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.222
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.222
+!MESSAGE project 4_4_CommonDivisorCalculator SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.222
+!MESSAGE project Chap12_Class_Demo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.223
+!MESSAGE project CommonDivisorCalculator_4_4 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.223
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.223
+!MESSAGE project CommonDivisorCalculator_4_4 SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.224
+!MESSAGE project ContactList ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.224
+!MESSAGE buffering callback sts4.classpath.KtNDTgAJ 12_2_WizardInventoryGame false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.224
+!MESSAGE project ContactList SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.225
+!MESSAGE Preparing classpath changed notification Chap12_Class_Demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.225
+!MESSAGE project Hello World ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.225
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.226
+!MESSAGE project Hello World SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.226
+!MESSAGE project InterestCalculator_3_3 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.226
+!MESSAGE project InterestCalculator_3_3 SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.226
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.227
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.227
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.227
+!MESSAGE buffering callback sts4.classpath.KtNDTgAJ Chap12_Class_Demo false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.227
+!MESSAGE project TravelTimeCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.228
+!MESSAGE executing callback sts4.classpath.KtNDTgAJ 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.228
+!MESSAGE project TravelTimeCalculator SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.228
+!MESSAGE project ch04_ex1_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.229
+!MESSAGE project ch04_ex1_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.229
+!MESSAGE project ch04_ex2_Invoice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.229
+!MESSAGE project ch04_ex2_Invoice SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.229
+!MESSAGE project ch04_ex3_GuessNumber ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.230
+!MESSAGE project ch04_ex3_GuessNumber SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.230
+!MESSAGE project ch04_ex3_GuessNumber_sol ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.230
+!MESSAGE project ch04_ex3_GuessNumber_sol SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.231
+!MESSAGE project ch04_ex4_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.231
+!MESSAGE project ch04_ex4_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.231
+!MESSAGE project ch04_ex4_FutureValue_sol ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.232
+!MESSAGE project ch04_ex4_FutureValue_sol SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.232
+!MESSAGE project ch05_ex1_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.232
+!MESSAGE project ch05_ex1_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.233
+!MESSAGE project ch05_ex2_GuessNumber ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.233
+!MESSAGE project ch05_ex2_GuessNumber SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.233
+!MESSAGE project ch06_ex1_Invoice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.234
+!MESSAGE project ch06_ex1_Invoice SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.234
+!MESSAGE project ch06_ex2_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.234
+!MESSAGE project ch06_ex2_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.235
+!MESSAGE project ch06_ex3_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.235
+!MESSAGE project ch06_ex3_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.235
+!MESSAGE project ch06_ex4_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.236
+!MESSAGE project ch06_ex4_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.236
+!MESSAGE project ch07_Product ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.236
+!MESSAGE project ch07_Product SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.237
+!MESSAGE project ch07_ex1_Product ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.237
+!MESSAGE project ch07_ex1_Product SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.237
+!MESSAGE project ch07_ex1_Product_sol ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.238
+!MESSAGE project ch07_ex1_Product_sol SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.238
+!MESSAGE project ch07_ex2_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.238
+!MESSAGE project ch07_ex2_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.238
+!MESSAGE project ch07_ex2_FutureValue_sol ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.239
+!MESSAGE project ch07_ex2_FutureValue_sol SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.239
+!MESSAGE project ch07_ex3_AreaAndPerimeter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.239
+!MESSAGE project ch07_ex3_AreaAndPerimeter SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.240
+!MESSAGE project ch07_ex3_AreaAndPerimeter_sol ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.240
+!MESSAGE project ch07_ex3_AreaAndPerimeter_sol SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.240
+!MESSAGE project ch08_ex1_Product ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.241
+!MESSAGE project ch08_ex1_Product SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.241
+!MESSAGE project ch08_ex2_Product ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.241
+!MESSAGE project ch08_ex2_Product SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.241
+!MESSAGE project ch08_ex3_EqualsTest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.242
+!MESSAGE project ch08_ex3_EqualsTest SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.242
+!MESSAGE project ch09_ex1_DisplayableTest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.242
+!MESSAGE project ch09_ex1_DisplayableTest SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.243
+!MESSAGE project ch09_ex2_CloneableTest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.243
+!MESSAGE project ch09_ex2_CloneableTest SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.243
+!MESSAGE project ch10_LineItemWithMod ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.244
+!MESSAGE project ch10_LineItemWithMod SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.244
+!MESSAGE project ch10_ex1_LineItem ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.244
+!MESSAGE project ch10_ex1_LineItem SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.244
+!MESSAGE project ch10_ex1_Product ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.245
+!MESSAGE project ch10_ex1_Product SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.245
+!MESSAGE project ch10_ex2_LineItem ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.246
+!MESSAGE project ch10_ex2_LineItem SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.246
+!MESSAGE project ch10_ex2_LineItem_sol ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.247
+!MESSAGE project ch10_ex2_LineItem_sol SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.247
+!MESSAGE project ch10_ex3_Enumeration ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.248
+!MESSAGE project ch10_ex3_Enumeration SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.248
+!MESSAGE project ch11_ex1_MonthSales ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.249
+!MESSAGE project ch11_ex1_MonthSales SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.249
+!MESSAGE project ch11_ex2_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.249
+!MESSAGE project ch11_ex2_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.250
+!MESSAGE project ch11_ex3_SortedCustomers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.250
+!MESSAGE project ch11_ex3_SortedCustomers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.251
+!MESSAGE project ch11_ex4_CardDeck ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.251
+!MESSAGE project ch11_ex4_CardDeck SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.251
+!MESSAGE project ch12_Invoice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.252
+!MESSAGE project ch12_QueueTester ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.252
+!MESSAGE project ch12_TestScore ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.253
+!MESSAGE project ch12_WordCounter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.253
+!MESSAGE project ch12_ex1_CardDeck ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.253
+!MESSAGE project ch12_ex1_CardDeck SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.254
+!MESSAGE project ch12_ex2_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.254
+!MESSAGE project ch12_ex2_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.254
+!MESSAGE project ch12_ex3_GenericStack ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.255
+!MESSAGE project ch12_ex3_GenericStack SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.255
+!MESSAGE project ch13_ex1_NameParser ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.255
+!MESSAGE project ch13_ex1_NameParser SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.256
+!MESSAGE project ch13_ex2_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.256
+!MESSAGE project ch13_ex2_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.256
+!MESSAGE project ch14_ex1_Invoice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.257
+!MESSAGE project ch14_ex1_Invoice SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.257
+!MESSAGE project ch14_ex2_AgeCalculator ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.257
+!MESSAGE project ch14_ex2_AgeCalculator SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.257
+!MESSAGE project ch15_ex1_CustomerManager ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.258
+!MESSAGE project ch15_ex1_CustomerManager SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.258
+!MESSAGE project ch15_ex2_ProductManager ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.258
+!MESSAGE project ch15_ex2_ProductManager SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.259
+!MESSAGE project ch15_ex3_ProductManager ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.259
+!MESSAGE project ch15_ex3_ProductManager SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.259
+!MESSAGE project ch16_ex1_ExceptionTester ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.259
+!MESSAGE project ch16_ex1_ExceptionTester SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.260
+!MESSAGE project ch16_ex2_ResourcesTester ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.260
+!MESSAGE project ch16_ex2_ResourcesTester SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.260
+!MESSAGE project ch16_ex3_CustomTester ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.260
+!MESSAGE project ch16_ex3_CustomTester SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.261
+!MESSAGE project ch17_ex1_MPGFX ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.261
+!MESSAGE project ch17_ex1_MPGFX SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.261
+!MESSAGE project ch17_ex2_MPGFXML ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.261
+!MESSAGE project ch17_ex2_MPGFXML SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.262
+!MESSAGE project ch18_ex1_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.262
+!MESSAGE project ch18_ex1_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.262
+!MESSAGE project ch18_ex2_AreaAndPerimeter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.262
+!MESSAGE project ch18_ex2_AreaAndPerimeter SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.263
+!MESSAGE project ch19_ex1_FutureValue ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.263
+!MESSAGE project ch19_ex1_FutureValue SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.263
+!MESSAGE project ch19_ex2_PizzaOrder ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.263
+!MESSAGE project ch19_ex2_PizzaOrder SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.264
+!MESSAGE project ch21_ex1_DBTester ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.264
+!MESSAGE project ch21_ex1_DBTester SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.264
+!MESSAGE project ch21_ex2_ProductManager ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.265
+!MESSAGE project ch21_ex2_ProductManager SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.265
+!MESSAGE project ch22_ex1_BookCatalog ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.265
+!MESSAGE project ch22_ex1_BookCatalog SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.265
+!MESSAGE project ch22_ex2_BookCatalog ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.266
+!MESSAGE project ch22_ex2_BookCatalog SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.266
+!MESSAGE project ch23_ex1_Counter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.266
+!MESSAGE project ch23_ex1_Counter SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.266
+!MESSAGE project ch23_ex2_Counter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.267
+!MESSAGE project ch23_ex2_Counter SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.267
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.267
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KtNDTgAJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.272
+!MESSAGE executing callback sts4.classpath.KtNDTgAJ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.273
+!MESSAGE Preparing classpath changed notification ch12_Invoice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.274
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.276
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.277
+!MESSAGE buffering callback sts4.classpath.KtNDTgAJ ch12_Invoice false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.277
+!MESSAGE Preparing classpath changed notification ch12_QueueTester
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.277
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.278
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.279
+!MESSAGE buffering callback sts4.classpath.KtNDTgAJ ch12_QueueTester false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.280
+!MESSAGE Preparing classpath changed notification ch12_TestScore
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.280
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.282
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.283
+!MESSAGE buffering callback sts4.classpath.KtNDTgAJ ch12_TestScore false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.283
+!MESSAGE Preparing classpath changed notification ch12_WordCounter
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.284
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.285
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.286
+!MESSAGE buffering callback sts4.classpath.KtNDTgAJ ch12_WordCounter false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.286
+!MESSAGE executing callback sts4.classpath.KtNDTgAJ 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-23 09:39:44.293
+!MESSAGE executing callback sts4.classpath.KtNDTgAJ SUCCESS [done]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-10-23 09:39:54.156
+!MESSAGE CodeMix Engine engine has been started
+
+!ENTRY org.eclipse.ui 2 2 2019-10-23 09:40:11.179
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
