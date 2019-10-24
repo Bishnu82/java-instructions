@@ -17,7 +17,7 @@ public class PRSApp {
 	public static void main(String[] args) {
 	
 	        System.out.println("Welcome to the PRS Console\n");
-	        displayMenu();
+	        displayMenu();  
 
 	        // perform 1 or more actions
 	        String action = "";
@@ -33,7 +33,7 @@ public class PRSApp {
 	            } else if (action.equalsIgnoreCase("add")) {
 	                addUser();
 	            } else if (action.equalsIgnoreCase("edit")) {
-	                displayMenu();
+	                editUser();
 	            } else if (action.equalsIgnoreCase("del") || 
 	                       action.equalsIgnoreCase("delete")) {
 	                deleteUser();
@@ -82,34 +82,12 @@ public class PRSApp {
 	            }
 	            System.out.println(sb.toString());
 	        }
+	        
 	        public static void displayOneUser() {
-	        	String userName = Console.getString("Which Username?");
+	        	int userId = Console.getInt("Which Username?");
 	            System.out.println("User");
-
-	            List<User> users = userFile.get(userName);
-	            StringBuilder sb = new StringBuilder();
-	            for (User u : users) {
-	                sb.append(
-	                        u.getId());
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getUserName(), 10));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getPassword(), 10));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getFirstName(), 10));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getLastName(), 10));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getPhoneNumber(), 10));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getEmail(), 10));
-	                sb.append(
-	                        u.getIsReviewer());
-	                sb.append(
-	                        u.getIsAdmin());
-	                sb.append("\n");
-	            }
-	            System.out.println(sb.toString());
+	            User user = userFile.get(userId);
+	            System.out.println(user);
 	        }
 
 	        public static void addUser() {
@@ -138,6 +116,33 @@ public class PRSApp {
 
 	            System.out.println(userName
 	                    + " has been added.\n");
+	        }
+	        
+	        public static void editUser() {
+	        	int userId = Console.getInt("Which User would you like to edit?");
+	            User user = userFile.get(userId);
+	            
+	            int id = Console.getInt("Enter User Id");
+	            String userName = Console.getString("Enter User Name: ");
+	            String password = Console.getString("Enter Password: ");
+	            String firstName = Console.getString("Enter First Name: ");
+	            String lastName = Console.getString("Enter Last Name: ");
+	            String phoneNumber = Console.getString("Enter Phone Number: ");
+	            String email = Console.getString("Enter Email: ");
+	            boolean isReviewer = Boolean.parseBoolean(Console.getString("Is Reviewer: true / false "));
+	            boolean isAdmin = Boolean.parseBoolean(Console.getString("Is Admin: true / false "));
+	            
+	            user.setId(id);
+	            user.setUserName(userName);
+	            user.setPassword(password);
+	            user.setFirstName(firstName);
+	            user.setLastName(lastName);
+	            user.setPhoneNumber(phoneNumber);
+	            user.setEmail(email);
+	            user.setIsReviewer(isReviewer);
+	            user.setIsAdmin(isAdmin);
+	                        
+	            System.out.println(user);
 	        }
 
 	        public static void deleteUser() {
