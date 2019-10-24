@@ -1,22 +1,22 @@
 package business;
 
-public class user {
+public class User {
 	
-	private int id;     		
-    private String userName;
-    private String password;
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
-    private String email;
-	private boolean isReviewer;
-    private boolean isAdmin;
+	public int id;     		
+    public String userName;
+    public String password;
+    public String firstName;
+    public String lastName;
+    public String phoneNumber;
+    public String email;
+	public boolean isReviewer;
+    public boolean isAdmin;
 	
-    public user() {
+    public User() {
 		super();
 	}
 
-	public user(int id, String userName, String password, String firstName, String lastName, String phoneNumber,
+	public  User(int id, String userName, String password, String firstName, String lastName, String phoneNumber,
 			String email, boolean isReviewer, boolean isAdmin) {
 		super();
 		this.id = id;

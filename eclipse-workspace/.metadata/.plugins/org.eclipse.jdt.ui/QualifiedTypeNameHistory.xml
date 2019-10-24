@@ -5,4 +5,6 @@
 <fullyQualifiedTypeName name="util.Console"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="business.User"/>
+<fullyQualifiedTypeName name="util.StringUtils"/>
 </qualifiedTypeNameHistroy>
