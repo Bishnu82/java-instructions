@@ -121,9 +121,5 @@ public class request {
 				+ ", total=" + total + ", submittedDate=" + submittedDate + ", reasonForRejection=" + reasonForRejection
 				+ "]";
 	}
-	
-	
-	
-
 }
 // foreign key (userID) references user(id)

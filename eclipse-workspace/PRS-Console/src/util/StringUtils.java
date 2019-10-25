@@ -2,7 +2,7 @@ package util;
 
 public class StringUtils {
 
-    public static String padWithSpaces(String s, int length) {
+	public static String padWithSpaces(String s, int length) {
         if (s.length() < length) {
             StringBuilder sb = new StringBuilder(s);
             while (sb.length() < length) {

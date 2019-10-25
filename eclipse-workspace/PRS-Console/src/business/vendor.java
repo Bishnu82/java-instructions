@@ -107,8 +107,5 @@ public class vendor {
 		return "vendor [id=" + id + ", code=" + code + ", name=" + name + ", address=" + address + ", city=" + city
 				+ ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email + "]";
 	}
-	
-	
-
 }
 // constraint vcode unique (code)

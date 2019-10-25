@@ -1,7 +1,5 @@
 package ui;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import business.User;
@@ -19,10 +17,8 @@ public class PRSApp {
 	        System.out.println("Welcome to the PRS Console\n");
 	        displayMenu();  
 
-	        // perform 1 or more actions
 	        String action = "";
 	        while (!action.equalsIgnoreCase("exit")) {
-	            // get the input from the user
 	            action = Console.getString("Enter a command: ");
 	            System.out.println();
 
@@ -62,44 +58,45 @@ public class PRSApp {
 	            for (User u : users) {
 	                sb.append(
 	                        u.getId());
+	                sb.append("\t");
 	                sb.append(StringUtils.padWithSpaces(
-	                        u.getUserName(), 10));
+	                        u.getUserName(), 15));
 	                sb.append(StringUtils.padWithSpaces(
-	                        u.getPassword(), 10));
+	                        u.getPassword(), 15));
 	                sb.append(StringUtils.padWithSpaces(
-	                        u.getFirstName(), 10));
+	                        u.getFirstName(), 15));
 	                sb.append(StringUtils.padWithSpaces(
-	                        u.getLastName(), 10));
+	                        u.getLastName(), 15));
 	                sb.append(StringUtils.padWithSpaces(
-	                        u.getPhoneNumber(), 10));
+	                        u.getPhoneNumber(), 20));
 	                sb.append(StringUtils.padWithSpaces(
-	                        u.getEmail(), 10));
+	                        u.getEmail(), 20));
 	                sb.append(
 	                        u.getIsReviewer());
+	                sb.append("\t\t");
 	                sb.append(
 	                        u.getIsAdmin());
 	                sb.append("\n");
 	            }
-	            System.out.println(sb.toString());
+	            	System.out.println(sb.toString());
 	        }
 	        
 	        public static void displayOneUser() {
-	        	int userId = Console.getInt("Which Username?");
-	            System.out.println("User");
+	        	int userId = Console.getInt("Enter ID of User you woould like to get: ");
 	            User user = userFile.get(userId);
 	            System.out.println(user);
 	        }
 
 	        public static void addUser() {
-	        	int id = Console.getInt("Enter User Id");
+	        	int id = Console.getInt("Enter User Id: ");
 	            String userName = Console.getString("Enter User Name: ");
 	            String password = Console.getString("Enter Password: ");
 	            String firstName = Console.getString("Enter First Name: ");
 	            String lastName = Console.getString("Enter Last Name: ");
 	            String phoneNumber = Console.getString("Enter Phone Number: ");
 	            String email = Console.getString("Enter Email: ");
-	            boolean isReviewer = Boolean.parseBoolean(Console.getString("Is Reviewer: true / false "));
-	            boolean isAdmin = Boolean.parseBoolean(Console.getString("Is Admin: true / false "));
+	            boolean isReviewer = Boolean.parseBoolean(Console.getString("Is Reviewer true / false? "));
+	            boolean isAdmin = Boolean.parseBoolean(Console.getString("Is Admin: true / false? "));
 	            
 
 	            User user = new User();
@@ -119,16 +116,16 @@ public class PRSApp {
 	        }
 	        
 	        public static void editUser() {
-	        	int userId = Console.getInt("Which User would you like to edit?");
+	        	int userId = Console.getInt("Which User would you like to edit? ");
 	            User user = userFile.get(userId);
 	            
-	            int id = Console.getInt("Enter User Id");
-	            String userName = Console.getString("Enter User Name: ");
-	            String password = Console.getString("Enter Password: ");
-	            String firstName = Console.getString("Enter First Name: ");
-	            String lastName = Console.getString("Enter Last Name: ");
-	            String phoneNumber = Console.getString("Enter Phone Number: ");
-	            String email = Console.getString("Enter Email: ");
+	            int id = Console.getInt("Enter User Id: ");
+	            String userName = Console.getString("New User Name: ");
+	            String password = Console.getString("New Password: ");
+	            String firstName = Console.getString("New First Name: ");
+	            String lastName = Console.getString("New Last Name: ");
+	            String phoneNumber = Console.getString("New Phone Number: ");
+	            String email = Console.getString("New Email: ");
 	            boolean isReviewer = Boolean.parseBoolean(Console.getString("Is Reviewer: true / false "));
 	            boolean isAdmin = Boolean.parseBoolean(Console.getString("Is Admin: true / false "));
 	            
