@@ -129,6 +129,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\murach\java\eclipse\book_apps\ch21_ProductManager"/>
 			<item value="C:\repos\java-instruction\eclipse-workspace\PRS-Console"/>
 			<item value="D:\murach\java\eclipse\book_apps"/>
 		</list>

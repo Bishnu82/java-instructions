@@ -2,9 +2,16 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
 <fullyQualifiedTypeName name="business.Product"/>
-<fullyQualifiedTypeName name="util.Console"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="business.User"/>
 <fullyQualifiedTypeName name="util.StringUtils"/>
+<fullyQualifiedTypeName name="db.CustomerDB"/>
+<fullyQualifiedTypeName name="business.Customer"/>
+<fullyQualifiedTypeName name="util.Console"/>
+<fullyQualifiedTypeName name="db.stuffydb"/>
+<fullyQualifiedTypeName name="business.Stuffy"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="db.StuffyDB"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
 </qualifiedTypeNameHistroy>
