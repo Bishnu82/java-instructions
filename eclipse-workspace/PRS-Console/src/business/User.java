@@ -108,8 +108,5 @@ public class User {
 				+ ", lastName=" + lastName + ", phoneNumber=" + phoneNumber + ", email=" + email + ", isReviewer="
 				+ isReviewer + ", isAdmin=" + isAdmin + "]";
 	}
-		
-    	
-
 }
 // constraint uname unique (username)

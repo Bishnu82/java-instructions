@@ -5,13 +5,12 @@ public class Console {
     
     private static Scanner sc = new Scanner(System.in);
 
-    // getString should not allow an empty string
     public static String getString(String prompt) {
     	boolean isValid = false;
     	String s = null;
     	while (!isValid) {
 	        System.out.print(prompt);
-	        s = sc.nextLine();  // read user entry
+	        s = sc.nextLine();
 	        if (s!=null && s.equals("")) {
 	        	System.out.println("Error - entry required.  Try again.");
 	        }
@@ -33,7 +32,7 @@ public class Console {
             } else {
                 System.out.println("Error! Invalid integer. Try again.");
             }
-            sc.nextLine();  // discard any other data entered on the line
+            sc.nextLine();
         }
         return i;
     }
@@ -67,7 +66,7 @@ public class Console {
             } else {
                 System.out.println("Error! Invalid number. Try again.");
             }
-            sc.nextLine();  // discard any other data entered on the line
+            sc.nextLine();
         }
         return d;
     }

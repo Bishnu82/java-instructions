@@ -56,9 +56,6 @@ public class lineItem {
 		return "lineItem [id=" + id + ", requestID=" + requestID + ", productID=" + productID + ", quantity=" + quantity
 				+ "]";
 	}
-	
-	
-
 }
 //  foreign key (productID) references product(id),
 //  foreign key (requestID) references request(id),

@@ -22,7 +22,6 @@ public final class UserTextFile implements DAO<User> {
 
     @Override
     public List<User> getAll() {
-        // if the users file has already been read, don't read it again
         if (users != null) {
             return users;
         }
@@ -32,7 +31,6 @@ public final class UserTextFile implements DAO<User> {
             try (BufferedReader in = new BufferedReader(
                                      new FileReader(usersFile))) {
 
-                // read users from file into array list
                 String line = in.readLine();
                 while (line != null) {
                     String[] fields = line.split(FIELD_SEP);
@@ -79,8 +77,6 @@ public final class UserTextFile implements DAO<User> {
                                new BufferedWriter(
                                new FileWriter(usersFile)))) {
 
-            // write all users in the array list
-            // to the file
             for (User u : users) {
                 out.print(u.getId() + FIELD_SEP);
                 out.print(u.getUserName() + FIELD_SEP);
@@ -114,12 +110,10 @@ public final class UserTextFile implements DAO<User> {
 
     @Override
     public boolean update(User newUser) {
-        // get the old user and remove it
         User oldUser = this.get(newUser.getId());
         int i = users.indexOf(oldUser);
         users.remove(i);
 
-        // add the updated user
         users.add(i, newUser);
 
         return this.saveAll();

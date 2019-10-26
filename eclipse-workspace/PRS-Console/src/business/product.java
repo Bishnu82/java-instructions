@@ -86,9 +86,6 @@ public class product {
 		return "product [id=" + id + ", vendorID=" + vendorID + ", partNumber=" + partNumber + ", name=" + name
 				+ ", price=" + price + ", unit=" + unit + ", photoPath=" + photoPath + "]";
 	}
-	
-	
-
 }
 // foreign key (vendorID) references vendor(id),
 // constraint vendor_part unique (vendorID, partNumber)
