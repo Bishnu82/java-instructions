@@ -6,8 +6,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 import business.Stuffy;
+import business.User;
 import db.StuffyDB;
 import util.Console;
+import util.StringUtils;
 
 public class StuffyDispenserApp {
 	private static StuffyDB sdb = new StuffyDB();
@@ -17,15 +19,15 @@ public class StuffyDispenserApp {
 		
 		
 		int command = 0;
+		int id = 0;
 		while(command != 6) {
 			command = Console.getInt(getMenu(), 0, 7);
 			switch (command) {
 			case 1:
 				//List
-				System.out.println(listStuffy);
-				
-				
+				listStuffy(id);
 				break;
+		        
 			case 2:
 				//Get
 				id = Console.getInt("ID:   ");
@@ -89,17 +91,20 @@ public class StuffyDispenserApp {
 			System.out.println(s);
 		}
 		else {
-			System.out.println("No stuffy exixts for id:  "+id);
+			System.out.println("No stuffy exist for id:  "+id);
 		}
 		return s;
 		}
+	
 	public static Stuffy listStuffy(int id) {
-		while(id!=0) {
-		Stuffy s = sdb.get(id);
+		int i = 1;
+		Stuffy s = sdb.get(id+i);              
+		while (s!=null) {
+			i++;
 		
-		return s;
-		}
-		return null;
+       }
+		return (s);
+		
 	}
+
 }
-		

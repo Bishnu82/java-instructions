@@ -9,9 +9,9 @@
 <fullyQualifiedTypeName name="business.Customer"/>
 <fullyQualifiedTypeName name="util.Console"/>
 <fullyQualifiedTypeName name="db.stuffydb"/>
-<fullyQualifiedTypeName name="business.Stuffy"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="db.StuffyDB"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="business.Stuffy"/>
 </qualifiedTypeNameHistroy>
