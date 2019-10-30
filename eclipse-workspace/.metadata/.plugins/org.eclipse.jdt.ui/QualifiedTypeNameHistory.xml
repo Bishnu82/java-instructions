@@ -2,16 +2,27 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
 <fullyQualifiedTypeName name="business.Product"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="business.User"/>
 <fullyQualifiedTypeName name="util.StringUtils"/>
 <fullyQualifiedTypeName name="db.CustomerDB"/>
 <fullyQualifiedTypeName name="business.Customer"/>
-<fullyQualifiedTypeName name="util.Console"/>
 <fullyQualifiedTypeName name="db.stuffydb"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="db.StuffyDB"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="business.Stuffy"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="util.Console"/>
+<fullyQualifiedTypeName name="db.MovieDB"/>
+<fullyQualifiedTypeName name="business.Movie"/>
+<fullyQualifiedTypeName name="business.Actor"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="db.ActorDB"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="business.Contact"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="business.TestContact"/>
+<fullyQualifiedTypeName name="java.util.function.Predicate"/>
+<fullyQualifiedTypeName name="java.util.function.Consumer"/>
 </qualifiedTypeNameHistroy>
