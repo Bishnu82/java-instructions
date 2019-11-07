@@ -1,6 +1,6 @@
 package business;
 
-public class vendor {
+public class Vendor {
 	
 	private int id;
 	private String code;
@@ -12,11 +12,11 @@ public class vendor {
 	private String phoneNumber;
 	private String email;
 	
-	public vendor() {
+	public Vendor() {
 		super();
 	}
 
-	public vendor(int id, String code, String name, String address, String city, String state, String zip,
+	public Vendor(int id, String code, String name, String address, String city, String state, String zip,
 			String phoneNumber, String email) {
 		super();
 		this.id = id;

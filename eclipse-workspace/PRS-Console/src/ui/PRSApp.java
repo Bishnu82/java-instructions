@@ -3,14 +3,11 @@ package ui;
 import java.util.List;
 
 import business.User;
-
-
-
+import db.UserDB;
 import util.Console;
-import util.StringUtils;
 
 public class PRSApp {
-	private static DAO<User> userFile = new UserTextFile();
+	//private static DAO<User> userFile = new UserTextFile();
 
 	public static void main(String[] args) {
 	
@@ -22,16 +19,21 @@ public class PRSApp {
 	            action = Console.getString("Enter a command: ");
 	            System.out.println();
 
-	            if (action.equalsIgnoreCase("list")) {
+	            if ((action.equalsIgnoreCase("list")) ||
+	                (action.equalsIgnoreCase("l"))) {
 	                displayAllUsers();
-	            } else if (action.equalsIgnoreCase("get")) {
+	            } else if (action.equalsIgnoreCase("get") ||
+	                      (action.equalsIgnoreCase("g"))){
 	                displayOneUser();
-	            } else if (action.equalsIgnoreCase("add")) {
+	            } else if (action.equalsIgnoreCase("add") ||
+	            		  (action.equalsIgnoreCase("a"))){
 	                addUser();
-	            } else if (action.equalsIgnoreCase("edit")) {
+	            } else if (action.equalsIgnoreCase("edit") ||
+	            		  (action.equalsIgnoreCase("e"))){
 	                editUser();
 	            } else if (action.equalsIgnoreCase("del") || 
-	                       action.equalsIgnoreCase("delete")) {
+	                      (action.equalsIgnoreCase("delete") ||
+	             		  (action.equalsIgnoreCase("d")))){
 	                deleteUser();
 	            
 	            } else if (action.equalsIgnoreCase("exit")) {
@@ -43,52 +45,32 @@ public class PRSApp {
 	}
 	        private static void displayMenu() {
 	            System.out.println("COMMAND MENU");
-	            System.out.println("list    - List all Users");
-	            System.out.println("get     - Get a User");
-	            System.out.println("add     - Add a User");
-	            System.out.println("edit    - Edit a User");
-	            System.out.println("del     - Delete a User");
-	            System.out.println("exit    - Exit this application\n");
+	            System.out.println("1: List    - List all Users");
+	            System.out.println("2: Get     - Get a User");
+	            System.out.println("3: Add     - Add a User");
+	            System.out.println("4: Edit    - Edit a User");
+	            System.out.println("5: Del     - Delete a User");
+	            System.out.println("6: exit    - Exit this application\n");
 	        }
 	        public static void displayAllUsers() {
 	            System.out.println("User LIST");
 
-	            List<User> users = userFile.getAll();
-	            StringBuilder sb = new StringBuilder();
-	            for (User u : users) {
-	                sb.append(
-	                        u.getId());
-	                sb.append("\t");
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getUserName(), 15));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getPassword(), 15));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getFirstName(), 15));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getLastName(), 15));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getPhoneNumber(), 20));
-	                sb.append(StringUtils.padWithSpaces(
-	                        u.getEmail(), 20));
-	                sb.append(
-	                        u.getIsReviewer());
-	                sb.append("\t\t");
-	                sb.append(
-	                        u.getIsAdmin());
-	                sb.append("\n");
-	            }
-	            	System.out.println(sb.toString());
-	        }
+	            List<User> user = UserDB.list();
+				System.out.println("List of movies:");
+				for (User u: user) {
+					System.out.println(u);
+				}
+			}
+	            	
 	        
 	        public static void displayOneUser() {
 	        	int userId = Console.getInt("Enter ID of User you woould like to get: ");
-	            User user = userFile.get(userId);
+	            User user = UserDB.get(userId);
 	            System.out.println(user);
 	        }
 
 	        public static void addUser() {
-	        	int id = Console.getInt("Enter User Id: ");
+	        	//int id = Console.getInt("Enter User Id: ");
 	            String userName = Console.getString("Enter User Name: ");
 	            String password = Console.getString("Enter Password: ");
 	            String firstName = Console.getString("Enter First Name: ");
@@ -98,9 +80,8 @@ public class PRSApp {
 	            boolean isReviewer = Boolean.parseBoolean(Console.getString("Is Reviewer true / false? "));
 	            boolean isAdmin = Boolean.parseBoolean(Console.getString("Is Admin: true / false? "));
 	            
-
 	            User user = new User();
-	            user.setId(id);
+	            //user.setId(id);
 	            user.setUserName(userName);
 	            user.setPassword(password);
 	            user.setFirstName(firstName);
@@ -109,7 +90,7 @@ public class PRSApp {
 	            user.setEmail(email);
 	            user.setIsReviewer(isReviewer);
 	            user.setIsAdmin(isAdmin);
-	            userFile.add(user);
+	            UserDB.add(user);
 
 	            System.out.println(userName
 	                    + " has been added.\n");
@@ -117,9 +98,9 @@ public class PRSApp {
 	        
 	        public static void editUser() {
 	        	int userId = Console.getInt("Which User would you like to edit? ");
-	            User user = userFile.get(userId);
+	            User user = UserDB.get(userId);
 	            
-	            int id = Console.getInt("Enter User Id: ");
+	            //int id = Console.getInt("Enter User Id: ");
 	            String userName = Console.getString("New User Name: ");
 	            String password = Console.getString("New Password: ");
 	            String firstName = Console.getString("New First Name: ");
@@ -129,7 +110,7 @@ public class PRSApp {
 	            boolean isReviewer = Boolean.parseBoolean(Console.getString("Is Reviewer: true / false "));
 	            boolean isAdmin = Boolean.parseBoolean(Console.getString("Is Admin: true / false "));
 	            
-	            user.setId(id);
+	            //user.setId(id);
 	            user.setUserName(userName);
 	            user.setPassword(password);
 	            user.setFirstName(firstName);
@@ -145,9 +126,9 @@ public class PRSApp {
 	        public static void deleteUser() {
 	            int id = Console.getInt("Enter User ID to delete: ");
 
-	            User u = userFile.get(id);
+	            User u = UserDB.get(id);
 	            if (u != null) {
-	                userFile.delete(u);
+	                UserDB.delete(u);
 	                System.out.println(u.getUserName()
 	                        + " has been deleted.\n");
 	            } else {

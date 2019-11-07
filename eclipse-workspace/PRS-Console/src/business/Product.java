@@ -1,6 +1,6 @@
 package business;
 
-public class product {
+public class Product {
 	
 	private int id;
 	private int vendorID;
@@ -10,11 +10,11 @@ public class product {
 	private String unit;
 	private String photoPath;
 	
-	public product() {
+	public Product() {
 		super();
 	}
 
-	public product(int id, int vendorID, String partNumber, String name, double price, String unit, String photoPath) {
+	public Product(int id, int vendorID, String partNumber, String name, double price, String unit, String photoPath) {
 		super();
 		this.id = id;
 		this.vendorID = vendorID;

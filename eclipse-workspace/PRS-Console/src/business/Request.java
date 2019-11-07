@@ -2,7 +2,7 @@ package business;
 
 import java.util.Date;
 
-public class request {
+public class Request {
 	
 	private int id;
 	private int userID;
@@ -15,11 +15,11 @@ public class request {
 	private Date submittedDate;
 	private String reasonForRejection;
 	
-	public request() {
+	public Request() {
 		super();
 	}
 
-	public request(int id, int userID, String description, String justification, Date dateNeeded, String deliveryMode,
+	public Request(int id, int userID, String description, String justification, Date dateNeeded, String deliveryMode,
 			String status, double total, Date submittedDate, String reasonForRejection) {
 		super();
 		this.id = id;

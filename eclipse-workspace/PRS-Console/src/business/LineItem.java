@@ -1,17 +1,17 @@
 package business;
 
-public class lineItem {
+public class LineItem {
 	
 	private int id;
 	private int requestID;
 	private int productID;
 	private int quantity;
 	
-	public lineItem() {
+	public LineItem() {
 		super();
 	}
 
-	public lineItem(int id, int requestID, int productID, int quantity) {
+	public LineItem(int id, int requestID, int productID, int quantity) {
 		super();
 		this.id = id;
 		this.requestID = requestID;

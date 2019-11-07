@@ -6,12 +6,12 @@
 		<item value="com.chookapp.org.BracketeerJDT:1.2.0.201203031719"/>
 		<item value="com.chookapp.org.OverviewRulerBackground:1.1.0.201112231228"/>
 		<item value="com.codota.eclipse.plugin.feature:1.0.10"/>
-		<item value="com.genuitec.eclipse.code.angular.feature:3.6.0.201910291538"/>
-		<item value="com.genuitec.eclipse.code.extended.feature:3.6.0.201910291538"/>
-		<item value="com.genuitec.eclipse.code.feature:3.6.0.201910291538"/>
-		<item value="com.genuitec.eclipse.code.livepreview.feature:3.6.0.201910291538"/>
-		<item value="com.genuitec.eclipse.code.navigation.feature:3.6.0.201910291538"/>
-		<item value="com.genuitec.eclipse.code.slack.feature:3.6.0.201910291538"/>
+		<item value="com.genuitec.eclipse.code.angular.feature:3.6.0.201910311632"/>
+		<item value="com.genuitec.eclipse.code.extended.feature:3.6.0.201910311632"/>
+		<item value="com.genuitec.eclipse.code.feature:3.6.0.201910311632"/>
+		<item value="com.genuitec.eclipse.code.livepreview.feature:3.6.0.201910311632"/>
+		<item value="com.genuitec.eclipse.code.navigation.feature:3.6.0.201910311632"/>
+		<item value="com.genuitec.eclipse.code.slack.feature:3.6.0.201910311632"/>
 		<item value="com.github.spotbugs.plugin.eclipse:4.0.0.201904010749-792e955"/>
 		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
 		<item value="junit.extensions.eclipse.quick.feature:0.7.0.201204240825"/>
@@ -19,7 +19,7 @@
 		<item value="junit.extensions.eclipse.quick.pde.feature:0.6.0.201204240825-06-cb78j-312315351936"/>
 		<item value="junit.extensions.eclipse.quick.process.feature:0.1.1.201204240825"/>
 		<item value="junit.extensions.eclipse.quick.template.feature:0.1.0.201204240825"/>
-		<item value="net.sf.eclipsecs:8.18.0.201903231603"/>
+		<item value="net.sf.eclipsecs:8.19.0.201911051338"/>
 		<item value="org.eclipse.buildship:3.1.2.v20190903-1802"/>
 		<item value="org.eclipse.cdt.mylyn:5.21.0.v20180628-1730"/>
 		<item value="org.eclipse.cft.server.core.feature:1.2.3.v201805291812"/>

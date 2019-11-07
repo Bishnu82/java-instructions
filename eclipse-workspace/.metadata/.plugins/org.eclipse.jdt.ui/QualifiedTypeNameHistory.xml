@@ -2,8 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
 <fullyQualifiedTypeName name="business.Product"/>
-<fullyQualifiedTypeName name="business.User"/>
-<fullyQualifiedTypeName name="util.StringUtils"/>
 <fullyQualifiedTypeName name="db.CustomerDB"/>
 <fullyQualifiedTypeName name="business.Customer"/>
 <fullyQualifiedTypeName name="db.stuffydb"/>
@@ -27,4 +25,8 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="util.Console"/>
+<fullyQualifiedTypeName name="db.UserDB"/>
+<fullyQualifiedTypeName name="business.User"/>
+<fullyQualifiedTypeName name="com.mysql.cj.util.StringUtils"/>
+<fullyQualifiedTypeName name="util.StringUtils"/>
 </qualifiedTypeNameHistroy>

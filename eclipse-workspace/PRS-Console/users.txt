@@ -10,3 +10,5 @@
 10	jlotta	easy1234	nick	doe	5555555555	ha@aol.com	false	false	
 11	newtry	tree4567	big	red	7778889999	tree@aol.com	false	false	
 14	BBilly	easy3456	Billy	Bobo	4445556666	bobob@aol.com	false	true	
+3	IP	easy1234	IP	Freely	5554446666	ip@aol.com	true	true	
+0	IPFree	easy1234	IP	Freely	5554446666	IP@aol.com	true	true	
